@@ -41,7 +41,6 @@ export const getStaticProps = async (context) => {
     _id: new ObjectId(meetupId),
   });
   cleint.close();
-  console.log(meetups);
   return {
     props: {
       meetups: {
